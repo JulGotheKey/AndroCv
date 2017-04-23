@@ -67,7 +67,7 @@ public class Competence implements Serializable {
 
     public static ArrayList GenerateDefaultCompetencesSystem(){
         Competence[] competencesSytem = {
-                new Competence("Windows 10", "System", 5,"windows10_icon"),
+                new Competence("Windows 10", "System", 5,"windows_icon"),
                 new Competence("CentOs", "System", 3,"linux_icon"),
                 new Competence("Mac Os", "System", 3,"macos_icon"),
         };

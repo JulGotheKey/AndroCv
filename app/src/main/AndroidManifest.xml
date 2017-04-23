@@ -20,6 +20,12 @@
         <activity android:name=".CompetencesActivity">
 
         </activity>
+        <activity android:name=".ExperienceActivity">
+
+        </activity>
+        <activity android:name=".FormationActivity">
+
+        </activity>
     </application>
 
 </manifest>

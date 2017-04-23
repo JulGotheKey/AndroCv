@@ -55,7 +55,7 @@ public class CompetenceAdapater extends BaseAdapter {
         //TextView textViewTypeCompetence = (TextView) rowView.findViewById(R.id.textViewTypeCompetence);
 
         ratingBarCompetence.setNumStars(5);
-        int image = context.getResources().getIdentifier(competences.get(position).getSource(),"drawable",context.getPackageName());
+        int image = context.getResources().getIdentifier(competences.get(position).getSource(),"mipmap",context.getPackageName());
 
         textViewNomCompetence.setText(competences.get(position).getNom());
         ratingBarCompetence.setRating(competences.get(position).getRating());

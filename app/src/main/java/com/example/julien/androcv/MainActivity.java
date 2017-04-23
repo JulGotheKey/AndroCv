@@ -25,11 +25,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         buttonFormation = (Button) findViewById(R.id.buttonFormation);
+        buttonFormation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToFormation();
+            }
+        });
         buttonExperiences = (Button) findViewById(R.id.buttonExperiences);
+        buttonExperiences.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToExperience();
+            }
+        });
     }
 
     public void goToCompetences(){
         Intent competencesIntent = new Intent(getApplicationContext(), CompetencesActivity.class);
         startActivity(competencesIntent);
+    }
+
+    public void goToFormation(){
+        Intent formationItent = new Intent(getApplicationContext(), FormationActivity.class);
+        startActivity(formationItent);
+    }
+
+    public void goToExperience(){
+        Intent experienceIntent = new Intent(getApplicationContext(), ExperienceActivity.class);
+        startActivity(experienceIntent);
     }
 }
